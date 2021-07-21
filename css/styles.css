@@ -1,0 +1,120 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #222;
+}
+
+h1, h2, h3 {
+font-family: 'Encode Sans SC', sans-serif;
+font-weight: 400;
+}
+
+ul li {
+  list-style-type: none;
+}
+/* Link Styles */
+a {
+  text-decoration:none;
+  font-weight: 700;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+img {
+  padding: 5px 10px;
+}
+/* Main Styles */
+
+header, main {
+  background-color: rgba(190,190,190, .2);
+}
+
+.main-header .main-nav {
+  display:flex;
+}
+
+
+.main-nav {
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  padding: inherit;
+}
+
+.name {
+  padding-top: 30px;
+}
+ .main-nav a{
+    text-align:center;
+    display: block;
+  padding: 10px 15px;
+}
+
+main {
+  padding: 30px 0;
+}
+
+
+.main-nav a {
+  text-transform: uppercase;
+}
+
+#about-me {
+  margin: 1em 2em;
+}
+
+
+.profile-pic {
+  width:75vw;
+  margin:auto;
+}
+
+.experience {
+  margin: 0 2em;
+  flex: 1;
+}
+
+.experience img {
+  max-width:85vw;
+}
+
+.contact-info{
+  padding-top: 30px;
+  margin:0 2em;
+  }
+
+.contact-info h3 {
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: rgba(190,190,190, .2);
+}
+
+.last-content {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 25px 15px;
+}
+
+.contact {
+  font-size: 1.1em;
+  padding: 0 10px
+}
