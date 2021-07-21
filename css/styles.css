@@ -14,6 +14,11 @@ body {
   padding: 0;
   text-align: center;
   color: #222;
+  background-color: rgba(190,190,190, .2);
+}
+
+section {
+  padding-bottom: 2rem;
 }
 
 h1, h2, h3 {
@@ -32,6 +37,7 @@ a {
 
 a:hover {
   font-style: italic;
+  transform: scale(1.2);
 }
 
 img {
@@ -39,14 +45,13 @@ img {
 }
 /* Main Styles */
 
-header, main {
-  background-color: rgba(190,190,190, .2);
-}
-
-.main-header .main-nav {
+.main-header, .main-nav, #skills {
   display:flex;
 }
 
+.main-header {
+  flex-direction: column;
+}
 
 .main-nav {
   flex-direction: column;
@@ -70,6 +75,11 @@ main {
   padding: 30px 0;
 }
 
+section {
+  background-color: white;
+    padding:30px 0;
+  }
+}
 
 .main-nav a {
   text-transform: uppercase;
@@ -81,8 +91,9 @@ main {
 
 
 .profile-pic {
-  width:75vw;
+  max-width:75vw;
   margin:auto;
+  border-radius: 25px;
 }
 
 .experience {
@@ -94,8 +105,16 @@ main {
   max-width:85vw;
 }
 
+#skills {
+  margin: 0 2em;
+  flex-direction: column;
+}
+#skills ul li {
+  padding: 10px;
+}
+
 .contact-info{
-  padding-top: 30px;
+  padding: 30px 10% 0 10%;
   margin:0 2em;
   }
 
@@ -103,8 +122,8 @@ main {
   text-transform: uppercase;
 }
 
-footer {
-  background-color: rgba(190,190,190, .2);
+footer .main-nav {
+  display: none;
 }
 
 .last-content {
@@ -132,9 +151,9 @@ footer {
 justify-content: center;
   }
 
-  .name {
-    font-size: 2.5rem;
-    color: midnightblue;
+.name {
+    font-size: 2rem;
+    color: darkslategray;
   }
 
 .intro {
@@ -144,8 +163,8 @@ justify-content: center;
 }
 
 .profile-pic {
-    max-width: 40vw;
-    justify-content: flex-end;
+    max-width: 40%;
+    max-height: 250px;
 }
 
 #about-me {
@@ -155,10 +174,11 @@ justify-content: center;
   margin: 0;
   padding-right: 5px;
 }
+
+
 .experience {
   display: flex;
   flex-direction: row;
-  flex: 1;
   flex-wrap: wrap;
 }
 
@@ -172,16 +192,80 @@ justify-content: center;
 .column img{
   padding:0;
 }
+
+#skills ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#skills ul li {
+  flex:auto;
+  flex-basis: 30vw;
+}
 .contact-info {
   padding-bottom: 2rem;
 }
+
+.contact-info p {
+  font-size: 1.2rem;
 }
 
-/*
-@media screen and (min-width:1025px) {
+.to-top {
+  display:none;
+}
+
+.last-content {
+  margin: 0 0 25px;
+  font-size: .85rem;
+}
+
+.last-content p {
+  padding: 10px 15px;
+}
+
+footer {
+  padding: 0 5vw;
+}
+
+footer .main-nav {
+  display: flex;
+  flex-direction: row;
+}
+}
+
+@media screen and (min-width:1000px) {
   .main-header {
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 3rem;
+  }
+  .name {
+    padding-top: 0;
+  }
+
+  .intro {
+    padding: 2rem 3rem 0 3rem;
+  }
+
+  #skills ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #skills ul li {
+    flex:auto;
+    flex-basis: 30vw;
+  }
+  #about-me {
+    padding-right: 2rem;
+  }
+  section {
+    border-radius: 10px;
+    margin: 2em;
+  }
+  .column {
+    width: 32%;
+    padding: 20px 10px;
   }
 }
-*/
