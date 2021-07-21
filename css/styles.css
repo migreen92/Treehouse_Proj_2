@@ -187,7 +187,7 @@ justify-content: center;
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 0 5px;
+  padding: 0 5px 20px;
 }
 .column img{
   padding:0;
@@ -255,7 +255,7 @@ footer .main-nav {
   }
   #skills ul li {
     flex:auto;
-    flex-basis: 30vw;
+    flex-basis: 25vw;
   }
   #about-me {
     padding-right: 2rem;
